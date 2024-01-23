@@ -622,6 +622,7 @@ footer .footer__content .footer__copyright {
   margin-top: 20px;
   position: relative;
   right: 70px;
+  margin-bottom: 10px; 
 }
 
 .button-container button {
@@ -630,15 +631,17 @@ footer .footer__content .footer__copyright {
   font-size: 17px;
   cursor: pointer;
   border-radius: 8px;
-  padding: 6px 8px;
+  padding: 5px 8px;
   margin: 0 10px; 
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .button-container button:hover {
   background-color: #2980b9;
-    transform: scale(1.1);
+  transform: scale(1.1);
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
 
 
