@@ -29,7 +29,7 @@ body {
     background-color:#1E1E1E ;
     color: #f7f7f7;
   }
-  h1,h2,h3,h4, p {
+  h1,h2,h3,h4, {
     color: white;
   }
   .secondary-title{
@@ -43,7 +43,10 @@ body {
     background-color: #8b96c538;
   }
   .courses-details .value{
-    color: #f7f7f7;
+    color: #000;
+  }
+ .courses-details .label{
+    color: #000;
   }
   .course-item {
 
