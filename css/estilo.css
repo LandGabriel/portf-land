@@ -509,9 +509,10 @@ section a {
 }
 
 .course-item {
-  width: 100%; /* Defina a largura para 100% para ocupar toda a largura do .courses-details */
+  width: 100%; 
   padding: 10px;
   margin: 10px;
+  font-size: 16px;
   border: 3px solid #ccc;
   box-sizing: border-box;
   text-align: left;
