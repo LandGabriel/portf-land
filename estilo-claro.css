@@ -4,8 +4,8 @@
 
 }
   #toggle-modo {
-    cursor: pointer;
-    width: 100%;
+  x cursor: pointer;
+  width: 100%;
    height: 20%;
    font-family: var(--font-family);
    font-size: 18px;
@@ -46,10 +46,10 @@ h3 {
     background-color: #8b96c538;
   }
   .courses-details .value{
-    color: #000;
+    color: #f7f7f7;
   }
  .courses-details .label{
-    color: #000;
+    color: #f7f7f7;
   }
 .course-item {
     background-color: #8b96c538;
