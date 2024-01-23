@@ -602,6 +602,7 @@ footer .footer__content .footer__copyright {
   overflow: hidden;
   width: 100%;
   transition: transform 0.5s ease-in-out;
+  padding-bottom: 20px;
 }
 
 .course-item {
