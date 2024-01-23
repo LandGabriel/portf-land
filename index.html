@@ -8,262 +8,274 @@
     <link rel="icon" href="imagens/favicon-32x32.png" type="image/png">
 
     <!-- title -->
-    <title>LandGabriel Portfólio</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/estilo.css"/>
-    <link rel="stylesheet" href="estilo-claro.css" id="estilo-da-pagina">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar">
-      <div class="navbar__content max-width mb-0">
-      
-        <!-- Conteúdo da sua página aqui -->
-        <script src="alternar-modo.js"></script>
-        <a href="/"><h4>
-          <img src="imagens/theme.jpg" alt="Gabriel" class="photo" />  
-          Land_Gabriel</h4>
-        </a>
-        <ul class="navbar__links">
+  <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="imagens/favicon-32x32.png" type="image/png">
+
+  <!-- title -->
+  <title>LandGabriel Portfólio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="estilo-claro.css" id="estilo-da-pagina">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="navbar__content max-width mb-0">
+
+      <!-- Conteúdo da sua página aqui -->
+      <script src="alternar-modo.js"></script>
+      <a href="/">
+        <h4>
+          <img src="imagens/theme.jpg" alt="Gabriel" class="photo" />
+          Land_Gabriel
+        </h4>
+      </a>
+      <ul class="navbar__links">
+        <li><a href="#header">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#footer">Contato</a></li>
+        <li> <button id="toggle-modo">Alternar Modo</button></li>
+      </ul>
+      <div class="navbar__mobile">
+        <img src="assets/menu.svg" alt="menu" class="burguer" />
+        <ul class="mobile__links">
           <li><a href="#header">Início</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#footer">Contato</a></li>
-          <li>  <button id="toggle-modo">Alternar Modo</button></li>
         </ul>
-        <div class="navbar__mobile">
-          <img src="assets/menu.svg" alt="menu" class="burguer" />
-          <ul class="mobile__links">
-            <li><a href="#header">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#footer">Contato</a></li>
-          </ul>
-        </div>
       </div>
-    </nav>
-
-    <!-- header -->
-    <header id="header" class="max-width">
-      <div class="header__left">
-        <h1>Olá! Sou Gabriel Land Vieira, estudante de programação e Desenvolvedor Front-end Jr.</h1>
-        <p>
-          Estudante de Análise e Desenvolvimento de Sistemas, com ênfase em front-end e entusiasta do mundo tecnológico
-        </p>
-        <a href="#about" class="btn-btn-primary">Saiba Mais!</a>
-      </div>
-      <div class="header__right">  
-          <img src="https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif" >
-        </a>
-      </div>
-    </header>
-
-    <!-- Sobre -->
-    <section id="about" class="about max-width">
-      <div class="about__left">
-        <h2 class="secondary-title">Minhas redes</h2>
-        <p>
-          Entre em contato por meio das redes abaixo e mantenha-se atualizado sobre meus últimos projetos
-        </p>
-        <ul>
-            <li>
-              <a class="CV" href="imagens/Gabriel-cv.pdf" target="_blank"> <img src="imagens/icons8-currículo-48.png" alt="CV">
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/gabriel-vieira-617698293/" target="_blank"><img src="imagens/icons8-linkedin-logo.svg" alt="LinkedIn" /></a>
-            </li>
-            <li>
-                <a href="https://github.com/LandGabriel" target="_blank"><img src="imagens/icons8-github-squared.svg" class="github" alt="Github" /></a>
-            </li>
-        </ul>
     </div>
-    
-      <div class="about__right">
-        <h3 class="tertiary-title mb-m">
-          Curiosidades 
-        </h3>
-        <p>
-          Sou formado em Biomedicina, área da saúde e estou tentanto uma transição de carreira para o setor
-          tecnologia, mais especificamente para o meio da programação.
-        </p>
-        <p>
-          A tecnologia sempre foi algo que me desperta muito entusiasmo, presente em meu dia a dia desde a infância. Agora, 
-          diante dos avanços constantes, meu interesse cresce ainda mais, motivado pelos inúmeros desafios que surgem.
-        </p>
-      </div>
-    </section>
+  </nav>
 
-    <!-- habilidades -->
-    <section id="skills" class="skills">
-      <div class="skills__content max-width">
-        <h2 class="tertiary-title">Tecnologias e linguagens</h2>
-        <p class="description">
-         Ferramentas que utilizo e que me permitem
-          criar projetos funcionais.
-        </p>
-        <ul>
-          <li class="skills__item">
-            <div class="image-container">
-              <img src="imagens/icons8-code-40.png" alt="Desenvolvimento Web" />
-            </div>
-            <h3>Desenvolvimento Web</h3>
-            <p>
-              Envolve a criação de sites e aplicativos para a internet, necessitando da utilização de linguagens de programação, 
-              estilizações e marcações para tornar os recursos disponíveis
-            </p>
-            <ul>
-          <li class="skills__item">
-            <div class="image-container">
-              <img src="imagens/icons8-react-js.svg" alt="React" />
-            </div>
-            <h3>React</h3>
-            <p>
-     React é uma bilioteca JavaScript utilizada para construir interface de usuário interativas e reativas em aplicações web.
-            </p>
-          </li>
-          <li class="skills__item">
-            <div class="image-container">
-              <img src="imagens/icons8-javascript.svg" alt="JavaScript" />
-            </div>
-            <h3>JavaScript</h3>
-            <p>
-             JavaScript é uma linguagem de programação que permite criação de páginas web interativas, executadas em navegadores permitindo a manipulação do conteúdo
-            </p>
-          </li>
-          <li class="skills__item">
-            <div class="image-container">
-              <img src="imagens/icons8-html5.svg" alt="HTML" />
-            </div>
-            <h3>HTML5</h3>
-            <p>
-              Hyper Text Markup Language. Ele é usado para estruturar conteúdos em páginas web, usando tags para definir elementos com título, parágrafos e links.
-            </p>
-          </li>
-          <li class="skills__item">
-            <div class="image-container">
-              <img src="imagens/icons8-css3.svg" alt="CSS5" />
-            </div>
-            <h3>CSS3</h3>
-            <p>
-           Cascading Style Sheets. Ele é utilizado em conjunto com HTML para estilizar e formatar conteúdos de páginas web.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+  <!-- header -->
+  <header id="header" class="max-width">
+    <div class="header__left">
+      <h1>Olá! Sou Gabriel Land Vieira, estudante de programação e Desenvolvedor Front-end Jr.</h1>
+      <p>
+        Estudante de Análise e Desenvolvimento de Sistemas, com ênfase em front-end e entusiasta do mundo tecnológico
+      </p>
+      <a href="#about" class="btn-btn-primary">Saiba Mais!</a>
+    </div>
+    <div class="header__right">
+      <img src="https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif">
+      </a>
+    </div>
+  </header>
 
-    <!-- Projetos -->
-    <section id="projects" class="projects max-width">
-      <div class="projects__content">
-        <h2 class="secondary-title">Projetos concluídos</h2>
-        <p>
-     Alguns trabalhos recentes utilizando linguagens e tecnologias citadas acima.
-        </p>
-      </div>
+  <!-- Sobre -->
+  <section id="about" class="about max-width">
+    <div class="about__left">
+      <h2 class="secondary-title">Minhas redes</h2>
+      <p>
+        Entre em contato por meio das redes abaixo e mantenha-se atualizado sobre meus últimos projetos
+      </p>
       <ul>
         <li>
-          <div class="image">
-            <img src="imagens/responsive-form.png" alt="" />
+          <a class="CV" href="imagens/Gabriel-cv.pdf" target="_blank"> <img src="imagens/icons8-currículo-48.png" alt="CV">
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/gabriel-vieira-617698293/" target="_blank"><img src="imagens/icons8-linkedin-logo.svg" alt="LinkedIn" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/LandGabriel" target="_blank"><img src="imagens/icons8-github-squared.svg" class="github" alt="Github" /></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="about__right">
+      <h3 class="tertiary-title mb-m">
+        Curiosidades
+      </h3>
+      <p>
+        Sou formado em Biomedicina, área da saúde e estou tentanto uma transição de carreira para o setor
+        tecnologia, mais especificamente para o meio da programação.
+      </p>
+      <p>
+        A tecnologia sempre foi algo que me desperta muito entusiasmo, presente em meu dia a dia desde a infância. Agora,
+        diante dos avanços constantes, meu interesse cresce ainda mais, motivado pelos inúmeros desafios que surgem.
+      </p>
+    </div>
+  </section>
+
+  <!-- habilidades -->
+  <section id="skills" class="skills">
+    <div class="skills__content max-width">
+      <h2 class="tertiary-title">Tecnologias e linguagens</h2>
+      <p class="description">
+        Ferramentas que utilizo e que me permitem
+        criar projetos funcionais.
+      </p>
+      <ul>
+        <li class="skills__item">
+          <div class="image-container">
+            <img src="imagens/icons8-code-40.png" alt="Desenvolvimento Web" />
           </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">
-              Formulário de cadastro reponsivo
-            </h3>
-            <p>
-              Formulário responsivo faz a capacidade de um site ou formulário se adaptar e fornecer uma experiência de usuário 
-              adequada em diferentes dispositivos e tamanhos de tela.
-              
-            </p>
-            <div class="links">
+          <h3>Desenvolvimento Web</h3>
+          <p>
+            Envolve a criação de sites e aplicativos para a internet, necessitando da utilização de linguagens de programação,
+            estilizações e marcações para tornar os recursos disponíveis
+          </p>
+          <ul>
+            <li class="skills__item">
+              <div class="image-container">
+                <img src="imagens/icons8-react-js.svg" alt="React" />
+              </div>
+              <h3>React</h3>
+              <p>
+                React é uma bilioteca JavaScript utilizada para construir interface de usuário interativas e reativas em aplicações web.
+              </p>
+            </li>
+            <li class="skills__item">
+              <div class="image-container">
+                <img src="imagens/icons8-javascript.svg" alt="JavaScript" />
+              </div>
+              <h3>JavaScript</h3>
+              <p>
+                JavaScript é uma linguagem de programação que permite criação de páginas web interativas, executadas em navegadores permitindo a manipulação do conteúdo
+              </p>
+            </li>
+            <li class="skills__item">
+              <div class="image-container">
+                <img src="imagens/icons8-html5.svg" alt="HTML" />
+              </div>
+              <h3>HTML5</h3>
+              <p>
+                Hyper Text Markup Language. Ele é usado para estruturar conteúdos em páginas web, usando tags para definir elementos com título, parágrafos e links.
+              </p>
+            </li>
+            <li class="skills__item">
+              <div class="image-container">
+                <img src="imagens/icons8-css3.svg" alt="CSS5" />
+              </div>
+              <h3>CSS3</h3>
+              <p>
+                Cascading Style Sheets. Ele é utilizado em conjunto com HTML para estilizar e formatar conteúdos de páginas web.
+              </p>
+            </li>
+          </ul>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projects" class="projects max-width">
+    <div class="projects__content">
+      <h2 class="secondary-title">Projetos concluídos</h2>
+      <p>
+        Alguns trabalhos recentes utilizando linguagens e tecnologias citadas acima.
+      </p>
+    </div>
+    <ul>
+      <li>
+        <div class="image">
+          <img src="imagens/responsive-form.png" alt="" />
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Formulário de cadastro reponsivo
+          </h3>
+          <p>
+            Formulário responsivo faz a capacidade de um site ou formulário se adaptar e fornecer uma experiência de usuário
+            adequada em diferentes dispositivos e tamanhos de tela.
+
+          </p>
+          <div class="links">
             <a href="https://github.com/LandGabriel/responsive-form">Repositório 🧑‍💻</a>
             <a href="https://landgabriel.github.io/responsive-form/">Veja o projeto 🔎 </a>
           </div>
         </div>
 
-        </li>
-        <li class="projects__reversed-list">
-          <div class="image">
-            <img src="imagens/calc-eritro.png" alt="ecommerce" />
-          </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">
-              Calculadora de eritroblasto
-            </h3>
-            <p>
-            Calcular % de eritroblasto e correção total de leucócitos, quando há mais e 5 eritroblastos por hemograma de pacientes, é necessário fazer uma correção de leucócitos totais. 
+      </li>
+      <li class="projects__reversed-list">
+        <div class="image">
+          <img src="imagens/calc-eritro.png" alt="ecommerce" />
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Calculadora de eritroblasto
+          </h3>
+          <p>
+            Calcular % de eritroblasto e correção total de leucócitos, quando há mais e 5 eritroblastos por hemograma de pacientes, é necessário fazer uma correção de leucócitos totais.
             Assim, utilizamos a fórmula: Leucócitos*100/% de Eritroblastos + 100 = Isso, tudo está na calculadora desenvolvida! Feito utilizando HTML, CSS e JavaScript.
-            <div class="links">
+          <div class="links">
             <a href="https://github.com/LandGabriel/Eritroblasto-Calculator">Repositório 🧑‍💻</a>
             <a href="https://github.com/LandGabriel/Eritroblasto-Calculator">Veja o projeto 🔎 </a>
           </div>
         </div>
-        </li>
-        <li>
-          <div class="image">
-            <img src="imagens/shoes-shop.png" alt="delivery" />
-          </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">
+      </li>
+      <li>
+        <div class="image">
+          <img src="imagens/shoes-shop.png" alt="delivery" />
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
             Formulário para anúncio de tênis online
-            </h3>
-            <p>
-           Página de formulário para um anúncio de venda de tênis online, com suas funionalidades e itens obrigatórios para preenchimentos! HTML e CSS
-           <div class="links"> 
-           <a href="https://github.com/LandGabriel/responsive-form">Repositório 🧑‍💻</a>
-           <a href="https://landgabriel.github.io/responsive-form/">Veja o projeto 🔎 </a>
+          </h3>
+          <p>
+            Página de formulário para um anúncio de venda de tênis online, com suas funionalidades e itens obrigatórios para preenchimentos! HTML e CSS
+          <div class="links">
+            <a href="https://github.com/LandGabriel/responsive-form">Repositório 🧑‍💻</a>
+            <a href="https://landgabriel.github.io/responsive-form/">Veja o projeto 🔎 </a>
           </div>
         </div>
-        </li>
-        <li>
-          <div class="image">
-            <img src="imagens/cont-cell.png" alt="contador-células" />
-          </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">
-             Contador de células Hematológicas
-            </h3>
-            <p>
-              Facilitador de contador de células, sem precisar utilizar o físico, com o contador online fica mais fácil o manuseio.
+      </li>
+      <li>
+        <div class="image">
+          <img src="imagens/cont-cell.png" alt="contador-células" />
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Contador de células Hematológicas
+          </h3>
+          <p>
+            Facilitador de contador de células, sem precisar utilizar o físico, com o contador online fica mais fácil o manuseio.
 
-              <p> 🔨 Guia de instrução:
-                Cada célula tem seu respectivo número a ser contabilizado, visando o conforto da mão na hora de utilizar as teclas! A cada 100 células contadas, 
-                a contagem é parada e zerada para uma nova utilização.              <div class="links">        
+          <p> 🔨 Guia de instrução:
+            Cada célula tem seu respectivo número a ser contabilizado, visando o conforto da mão na hora de utilizar as teclas! A cada 100 células contadas,
+            a contagem é parada e zerada para uma nova utilização.
+          <div class="links">
             <a href="https://github.com/LandGabriel/ContCell">Repositório 🧑‍💻</a>
             <a href="https://landgabriel.github.io/ContCell/contador.html">Veja o projeto 🔎 </a>
-          </div>  
-          </div>  
-        </li>
-        <li>
-          <div class="image">
-            <img src="imagens/language-course.png" alt="delivery" />
           </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">
-             Web site reponsivo para planos e assinaturas
-            </h3>
-            <p>
-              Web site responsivo no formato de vendas e assinaturas para clientes.
-             <p> 🔨 Guia de instrução:
-              Botões ilustrativos para web site para vendas de assinaturas de planos.  </p>
-              <div class="links">        
+        </div>
+      </li>
+      <li>
+        <div class="image">
+          <img src="imagens/language-course.png" alt="delivery" />
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Web site reponsivo para planos e assinaturas
+          </h3>
+          <p>
+            Web site responsivo no formato de vendas e assinaturas para clientes.
+          <p> 🔨 Guia de instrução:
+            Botões ilustrativos para web site para vendas de assinaturas de planos. </p>
+          <div class="links">
             <a href="https://github.com/LandGabriel/website-responsive">Repositório 🧑‍💻</a>
             <a href="https://landgabriel.github.io/website-responsive/">Veja o projeto 🔎 </a>
-          </div>  
-          
-          </div>  
-        </li>
-      </ul>
-    </section>
+          </div>
 
+        </div>
+      </li>
+    </ul>
+  </section>
+  <div id="carousel" class="courses-carousel">
     <section id="courses" class="courses">
       <h2>Cursos e Certificações</h2>
       <div class="courses-details">
@@ -290,11 +302,11 @@
             <p>
               <span class="label">Certificado:</span>
               <span class="value">Em Andamento</span>
-              <a class="value">Link para o certificado</a>
+              <a class="value">Certificado 🎓</a>
             </p>
           </div>
         </div>
-  
+
         <div class="course-item">
           <h3>Uma imersão a TypeScript com foco em React.</h3>
           <div class="details">
@@ -317,7 +329,7 @@
             <p>
               <span class="label">Certificado:</span>
               <span class="value">Em Andamento</span>
-              <a class="value">Link para o certificado</a>
+              <a class="value">Certificado 🎓</a>
             </p>
           </div>
         </div>
@@ -344,12 +356,12 @@
             <p>
               <span class="label">Certificado:</span>
               <span class="value">Concluído</span>
-              <a href="imagens/Curso-JavaScript-40horas.pdf" target="_blank" class="value">Link para o certificado</a>
-          
+              <a href="imagens/Curso-JavaScript-40horas.pdf" target="_blank" class="value">Certificado 🎓</a>
+
             </p>
           </div>
         </div>
-  
+
         <!-- item 3 -->
         <div class="course-item">
           <h3>Git e Github</h3>
@@ -373,36 +385,41 @@
             <p>
               <span class="label">Certificado:</span>
               <span class="value">Concluído</span>
-              <a href="imagens/Curso-git-github.pdf" target="_blank" class="value">Link para o certificado</a>
+              <a href="imagens/Curso-git-github.pdf" target="_blank" class="value">Certificado 🎓</a>
             </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer__content max-width mb-0">
-        <h2 class="tertiary-title mb-s">Para entrar em contato!</h2>
-        <p class="mb-m">
-          Estou aberto a oportunidades e sempre disponível para novos aprendizados!
-        </p>
-        <div class="footer__contact mb-m">
-          <span class="mb-m">landgabrielv@gmail.com</span>
-        </div>
-        <ul class="mb-l">
-          <li>
-            <a href="https://wa.me/555191016371" target="_blank"><img src="imagens/icons8-whatsapp (2).svg" class="icon-whatsapp" /></a>
-          </li>
-          <li>
-              <a href="mailto:landgabrielv@gmail.com" target="_blank"><img src="imagens/icons8-gmail-logo.svg" alt="Gmail" /></a>
-          </li>
-        </ul>
-        <p class="footer__copyright">
-          © 2023 LandV. Todos os direitos reservados.
-        </p>
+      <div class="button-container">
+        <button id="prevButton">Prev</button>
+        <button id="nextButton">Next</button>
       </div>
-    </footer>
-    <!-- script -->
-    <script src="scripts/index.js"></script>
-  </body>
+  </div>
+  </section>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer__content max-width mb-0">
+      <h2 class="tertiary-title mb-s">Para entrar em contato!</h2>
+      <p class="mb-m">
+        Estou aberto a oportunidades e sempre disponível para novos aprendizados!
+      </p>
+      <div class="footer__contact mb-m">
+        <span class="mb-m">landgabrielv@gmail.com</span>
+      </div>
+      <ul class="mb-l">
+        <li>
+          <a href="https://wa.me/555191016371" target="_blank"><img src="imagens/icons8-whatsapp (2).svg" class="icon-whatsapp" /></a>
+        </li>
+        <li>
+          <a href="mailto:landgabrielv@gmail.com" target="_blank"><img src="imagens/icons8-gmail-logo.svg" alt="Gmail" /></a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        © 2023 LandV. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+  <!-- script -->
+  <script src="scripts/index.js"></script>
+</body>
 </html>
