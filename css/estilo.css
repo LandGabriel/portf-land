@@ -603,6 +603,8 @@ footer .footer__content .footer__copyright {
   width: 100%;
   transition: transform 0.5s ease-in-out;
   padding-bottom: 20px;
+  position: relative;
+  left: 36px;
 }
 
 .course-item {
