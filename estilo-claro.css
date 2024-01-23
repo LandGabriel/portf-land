@@ -29,12 +29,9 @@ body {
     background-color:#1E1E1E ;
     color: #f7f7f7;
   }
-  h1,h2,h4, p{
+  h1,h2,h3,h4, p{
     color: white;
   }
-h3 {
-  color: black;
-}
   .secondary-title{
     color: #f7f7f7;
   }
