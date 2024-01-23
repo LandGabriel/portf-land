@@ -41,3 +41,32 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.getElementById("carousel");
+  let currentIndex = 0;
+  let items = document.querySelectorAll(".course-item");
+
+  function showCourse(index) {
+    items.forEach((item, i) => {
+      if (i === index) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
+  function nextCourse() {
+    currentIndex = (currentIndex + 1) % items.length;
+    showCourse(currentIndex);
+  }
+
+  function prevCourse() {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    showCourse(currentIndex);
+  }
+  document.getElementById("nextButton").addEventListener("click", nextCourse);
+  document.getElementById("prevButton").addEventListener("click", prevCourse);
+
+  showCourse(currentIndex);
+});
