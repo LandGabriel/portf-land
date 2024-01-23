@@ -620,7 +620,8 @@ footer .footer__content .footer__copyright {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  right: 30px;
+  position: relative;
+  right: 70px;
 }
 
 .button-container button {
@@ -629,7 +630,7 @@ footer .footer__content .footer__copyright {
   font-size: 17px;
   cursor: pointer;
   border-radius: 8px;
-  padding: 8px 12px;
+  padding: 6px 8px;
   margin: 0 10px; 
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
