@@ -122,17 +122,6 @@ header .header__left p {
 }
 
 @media only screen and (max-width: 768px) {
-.burger{
-  display: none;}
-.header__right{
-   align-items: center;
-  width: 60%;
-}
-  
- .navbar__content h4 {
-        display: none;
-    }
-  
   .navbar .navbar__content .navbar__links {
     display: none;
   }
@@ -360,8 +349,6 @@ img.github {
   .about .about__right {
     text-align: center;
   }
-  .skills .skills__content ul li{
-    max-width: 350px;
 }
 
 /* Skills */
@@ -571,23 +558,6 @@ h2 {
   color: #000;
   font-size: 18px;
 }
-  @media screen and (max-width: 768px) {
-  .courses-details {
-    width: 100%;
-  }
-
-  h2 {
-    font-size: 2.4rem; /* Ajuste conforme necessário */
-  }
-
-  .courses-details .value {
-    font-size: 18px; /* Ajuste conforme necessário */
-  }
-
-  .courses-details .label {
-    font-size: 16px; /* Ajuste conforme necessário */
-  }
-}
 /* footer*/
 footer {
   background-color: #bec6ea55;
@@ -675,7 +645,3 @@ footer .footer__content .footer__copyright {
   transform: scale(1.1);
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
-
-
