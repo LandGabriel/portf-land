@@ -119,6 +119,7 @@ ul {
   list-style: none;
 }
 
+
 a {
   text-decoration: none;
   color: inherit;
@@ -269,21 +270,34 @@ img.github {
   font-weight: bold;
 }
 
+
 .skills .skills__content {
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
 }
 
 .skills .skills__content .description {
-  max-width: 56rem;
+  
   margin: 0 auto 6rem;
 }
+.axios {
+  width: 68px;
+  
+}
+
 
 .skills .skills__content ul {
   display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 2rem;
+  max-width: 100%;
 }
+
+.skills .skills__content ul li {
+  flex-grow: 1;
+  word-wrap: break-word; /* Adicionado para quebrar palavras longas se necessário */
+}
+
+
 .paragraph-web {
   max-width: 100%;
   justify-content: center;
@@ -338,10 +352,6 @@ h3 {
   margin-bottom: 10px;
 }
 
-.axios {
-  width: 68px;
-  
-}
 section a {
   display: block;
 }
