@@ -282,26 +282,23 @@ img.github {
 }
 .axios {
   width: 68px;
-  
 }
 
 
 .skills .skills__content ul {
   display: flex;
   gap: 2rem;
-  max-width: 100%;
+
 }
 
 .skills .skills__content ul li {
   flex-grow: 1;
-  word-wrap: break-word; /* Adicionado para quebrar palavras longas se necessário */
+  word-wrap: break-word;
 }
 
 
-.paragraph-web {
-  max-width: 100%;
-  justify-content: center;
-}
+
+
 .skills .skills__content ul li .image-container {
   background-color: white;
   padding: 2rem;
