@@ -655,16 +655,72 @@ footer .footer__content .footer__copyright {
 }
 }
 
-@media only screen and (max-width: 425px) {
-  .course-item {
-    width: calc(100% - 20px);
+@media only screen and (max-width: 480px) {
+  /* General adjustments for small screens */
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+
+  /* Reduce unnecessary height */
+  section {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  /* Ensure images fit within the screen */
+  img {
+    height: auto;
+    display: block;
     margin: 0 auto;
   }
 
-  h2 {
-    font-size: 22px;
+  /* Adjust heading sizes */
+  h1,
+  h2,
+  h3 {
+    font-size: 1.8rem; /* Adjust to fit smaller screens */
+    margin: 0.5rem 0;
+    text-align: center;
   }
-  .burguer {
-    display: none;
+
+  /* Buttons should fit well */
+  button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  /* Align content properly */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  /* Remove extra margins and paddings */
+  .content {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  /* Footer should be more compact */
+  footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Adjust specific problematic heights */
+  .section-with-extra-height {
+    height: auto; /* Let content define the height */
+  }
+
+  /* Reduce gaps and padding between elements */
+  .element-spacing {
+    margin-bottom: 1rem;
   }
 }
+
