@@ -119,7 +119,6 @@ ul {
   list-style: none;
 }
 
-
 a {
   text-decoration: none;
   color: inherit;
@@ -209,7 +208,6 @@ p:not(:last-of-type),
   margin-bottom: 6rem;
 }
 
-
 /* Fontes */
 
 :root {
@@ -270,34 +268,27 @@ img.github {
   font-weight: bold;
 }
 
-
 .skills .skills__content {
   padding: 2rem 2rem;
   text-align: center;
 }
 
 .skills .skills__content .description {
-  
   margin: 0 auto 6rem;
 }
 .axios {
   width: 68px;
 }
 
-
 .skills .skills__content ul {
   display: flex;
   gap: 2rem;
-
 }
 
 .skills .skills__content ul li {
   flex-grow: 1;
   word-wrap: break-word;
 }
-
-
-
 
 .skills .skills__content ul li .image-container {
   background-color: white;
@@ -394,68 +385,114 @@ section a {
   text-decoration: underline;
 }
 
-
 /* Certificações */
-.courses {
-  position: relative;
-  width: 100%; /* Defina a largura total da página */
+/* Centralizando o contêiner do carrossel */
+.courses-carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px; /* Limita a largura máxima do carrossel */
+  margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+  border-radius: 10px; /* Bordas arredondadas para dar uma aparência mais moderna */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+  background-color: #fff; /* Fundo branco para destacar o conteúdo */
 }
 
-.courses-details {
+/* Configurações dos itens dentro do carrossel */
+.carousel-inner {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  max-width: 800px;
-  background-color: #8B96C538;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto; /* Centraliza horizontalmente */
+  transition: transform 0.5s ease-in-out;
 }
 
-.course-item {
-  width: calc(33% - 20px); 
-  padding: 10px;
-  margin: 10px;
-  font-size: 19px;
-  border: 3px solid #ccc;
+.carousel-item {
+  min-width: 100%; /* Cada item ocupa 100% da largura do contêiner */
   box-sizing: border-box;
-  text-align: left;
+  padding: 20px;
+  text-align: center; /* Centraliza o conteúdo dentro de cada item */
 }
 
-h2 {
-  text-align: center;
-  font-size: 5.4rem;
-  font-weight: 700;
-  color: rgb(15, 3, 77);
-  padding: 14px;
-  margin-bottom: 20px;
+/* Estilo dos textos */
+.carousel-item {
+  border: 3px solid #ddd;
+  text-align: center; /* add this line to center the text */
 }
 
-.details {
+.courses {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
-  line-height: 1;
+  align-items: center;
+  text-align: center; /* add this line to center the text */
+}
+.carousel-item {
+  border: 3px solid #ddd;
+}
+.courses h2 {
+  margin-bottom: 10px; /* add some margin to separate the title from the carousel */
+}
+.carousel-item p {
+  margin: 5px 0;
+  font-size: 1.5rem;
+  color: #333;
 }
 
-.courses-details p {
-  margin: 2px;
-  margin-bottom: -8px;
-}
-
-.courses-details .value {
-  margin-bottom: 10px;
-  color: black;
+.details .label {
   font-weight: bold;
-  margin-left: 5px;
-  font-size: 20px;
 }
 
-.courses-details .label {
-  color: #000;
-  font-size: 18px;
+/* Indicadores (as bolinhas abaixo do carrossel) */
+.carousel-indicators {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #333; /* Muda a cor da bolinha ativa */
+}
+
+/* Estilo dos botões de navegação */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #555;
+  transform: scale(1.05); /* Efeito de aumentar um pouco ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Add this line to center the block horizontally */
+    width: 10px;
+  }
+
+  .courses {
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Add this line to center the block horizontally */
+  }
 }
 
 /* footer*/
@@ -506,7 +543,7 @@ footer .footer__content .footer__copyright {
   width: 100%;
   transition: transform 0.5s ease-in-out;
   padding-bottom: 20px;
- }
+}
 
 .course-item {
   width: 100%;
@@ -526,7 +563,7 @@ footer .footer__content .footer__copyright {
   margin-top: 20px;
   position: relative;
   right: 70px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .button-container button {
@@ -536,16 +573,15 @@ footer .footer__content .footer__copyright {
   cursor: pointer;
   border-radius: 8px;
   padding: 5px 8px;
-  margin: 0 10px; 
+  margin: 0 10px;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .button-container button:hover {
   background-color: #2980b9;
   transform: scale(1.1);
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Responsive */
 @media only screen and (max-width: 1024px) {
@@ -573,7 +609,7 @@ footer .footer__content .footer__copyright {
   }
 
   #gif {
-    margin-right: 400px; 
+    margin-right: 400px;
   }
 
   .projects ul li .projects__info {
@@ -648,11 +684,11 @@ footer .footer__content .footer__copyright {
   .skills .skills__content ul {
     display: block;
   }
-  
+
   .course-item {
     width: calc(80% - 15px);
-    margin: 0 auto; 
-}
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -723,4 +759,3 @@ footer .footer__content .footer__copyright {
     margin-bottom: 1rem;
   }
 }
-
