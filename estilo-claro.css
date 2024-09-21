@@ -1,54 +1,81 @@
-.dark-theme{
-  max-width: 4%;
-  height: 3%;
+/* Dark theme styles */
+.dark-theme {
+  max-width: 40%; /* changed from 4% to 40% */
+  height: 30%; /* changed from 3% to 30% */
+}
 
-}
-  #toggle-modo {
-  x cursor: pointer;
+/* Toggle mode styles */
+#toggle-modo {
+  cursor: pointer; /* removed 'x' from 'x cursor' */
   width: 100%;
-   height: 20%;
-   font-family: var(--font-family);
-   font-size: 18px;
-   border: none;
-   padding: 4px;
-   background-color: #3498db;
-   color: #fff;
-   border-radius: 5px;
-   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  }
- 
-   #toggle-modo:hover {
-    background-color: #2980b9;
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
-  
-.navbar{
-    background-color: #333333 ;
+  height: 20%;
+  font-family: var(--font-family);
+  font-size: 18px;
+  border: none;
+  padding: 4px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
+
+#toggle-modo:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile__links a {
+    color: rgb(247, 247, 247); /* Para combinar com o fundo azul */
+    text-decoration: none;
+    background-color: #1e1e1e;
+  }
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333333;
+}
+
+/* Body styles */
 body {
-    background-color:#1E1E1E ;
-    color: #f7f7f7;
-  }
-  h1,h2,h3,h4, p{
-    color: white;
-  }
-  .secondary-title{
-    color: #f7f7f7;
-  }
-  
-  .tertiary-title{
-    color: #f7f7f7;
-  }
-  footer{
-    background-color: #8b96c538;
-  }
-  .courses-details .value{
-    color: #f7f7f7;
-  }
- .courses-details .label{
-    color: #f7f7f7;
-  }
+  background-color: #1e1e1e;
+  color: #f7f7f7;
+}
+
+/* Typography styles */
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #fff;
+}
+
+/* Secondary and tertiary title styles */
+.secondary-title,
+.tertiary-title {
+  color: #f7f7f7;
+}
+
+/* Footer styles */
+footer {
+  background-color: #8b96c538;
+}
+
+/* Courses details styles */
+.courses-details .value,
+.courses-details .label {
+  color: #f7f7f7;
+}
+
+/* Course item styles */
 .course-item {
-    background-color: #8b96c538;
-  }
- 
+  background-color: #8b96c538;
+}
+
+/* Courses h3 styles */
+.courses h3 {
+  color: #000; /* changed from 'black' to '#000' for consistency */
+}
