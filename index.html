@@ -48,10 +48,10 @@
         <li><a href="#skills">Habilidades</a></li>
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#footer">Contato</a></li>
-        <li> <button id="toggle-modo">Alternar Modo</button></li>
+        <li> <button id="toggle-modo">Mudar tema</button></li>
       </ul>
       <div class="navbar__mobile">
-        <img src="imagens/menu.svg" alt="menu" class="burguer" />
+        <img src="assets/menu.svg" alt="menu" class="burguer" />
         <ul class="mobile__links">
           <li><a href="#header">Início</a></li>
           <li><a href="#about">Sobre</a></li>
@@ -87,7 +87,7 @@
       </p>
       <ul>
         <li>
-          <a class="CV" href="imagens/Gabriel-Land-Vieira 2024-DEV.pdf" target="_blank"> <img src="imagens/icons8-currículo-48.png" alt="CV">
+          <a class="CV" href="imagens/Gabriel-Land-CV-dev.pdf" target="_blank"> <img src="imagens/icons8-currículo-48.png" alt="CV">
         </li>
         <li>
           <a href="https://www.linkedin.com/in/gabriel-vieira-617698293/" target="_blank"><img src="imagens/icons8-linkedin-logo.svg" alt="LinkedIn" /></a>
@@ -373,179 +373,85 @@ Botões para concluir, editar, filtrar, pesquisar e excluir atividades conforme 
       </li>
     </ul>
   </section>
-  <div id="carousel" class="courses-carousel">
-    <section id="courses" class="courses">
-      <h2>Cursos e Certificações</h2>
-      <div class="courses-details">
-        <!-- item 1 -->
-        <div class="course-item">
+  <section id="courses" class="courses">
+    <h2>Cursos e Certificações</h2>
+    <div id="carousel" class="courses-carousel">
+      <div class="carousel-inner">
+        <!-- Cada item do carrossel -->
+        <div class="carousel-item active">
           <h3>JavaScript, HTML5 e CSS3</h3>
           <div class="details">
-            <p>
-              <span class="label">Instituição:</span>
-              <span class="value">Udemy</span>
-            </p>
-            <p>
-              <span class="label">Duração:</span>
-              <span class="value">50 horas</span>
-            </p>
-            <p>
-              <span class="label">Professor:</span>
-              <span class="value">Matheus Battisti</span>
-            </p>
-            <p>
-              <span class="label">Ano de conclusão:</span>
-              <span class="value">-</span>
-            </p>
-            <p>
-              <span class="label">Certificado:</span>
-              <span class="value">Em Andamento</span>
-              <a class="value">Certificado 🎓</a>
-            </p>
+            <p><span class="label">Instituição:</span> <span class="value">Udemy</span></p>
+            <p><span class="label">Duração:</span> <span class="value">50 horas</span></p>
+            <p><span class="label">Professor:</span> <span class="value">Matheus Battisti</span></p>
+            <p><span class="label">Ano de conclusão:</span> <span class="value">-</span></p>
+            <p><span class="label">Certificado:</span> <span class="value">Em andamento</span> <a class="value">Certificado 🎓</a></p>
           </div>
         </div>
-
-        <div class="course-item">
+  
+        <div class="carousel-item">
           <h3>TypeScript Avançado</h3>
           <div class="details">
-            <p>
-              <span class="label">Instituição:</span>
-              <span class="value">Udemy</span>
-            </p>
-            <p>
-              <span class="label">Duração:</span>
-              <span class="value">15 horas</span>
-            </p>
-            <p>
-              <span class="label">Professor:</span>
-              <span class="value">Matheus Battisti</span>
-            </p>
-            <p>
-              <span class="label">Ano de conclusão:</span>
-              <span class="value">-</span>
-            </p>
-            <p>
-              <span class="label">Certificado:</span>
-              <span class="value">Em Andamento</span>
-              <a class="value">Certificado 🎓</a>
-            </p>
+            <p><span class="label">Instituição:</span> <span class="value">Udemy</span></p>
+            <p><span class="label">Duração:</span> <span class="value">15 horas</span></p>
+            <p><span class="label">Professor:</span> <span class="value">Matheus Battisti</span></p>
+            <p><span class="label">Ano de conclusão:</span> <span class="value">2024</span></p>
+            <p><span class="label">Certificado:</span> <span class="value">Concluído</span> <a class="value">Certificado 🎓</a></p>
           </div>
         </div>
-        <!-- item 2 -->
-        <div class="course-item">
-          <h3>JavaScript com ênfase em React</h3>
+  
+        <div class="carousel-item">
+          <h3>Git e versionamentos</h3>
           <div class="details">
-            <p>
-              <span class="label">Instituição:</span>
-              <span class="value">Curso em vídeo</span>
-            </p>
-            <p>
-              <span class="label">Duração:</span>
-              <span class="value">40 horas</span>
-            </p>
-            <p>
-              <span class="label">Professor:</span>
-              <span class="value">Gustavo Guanabara</span>
-            </p>
-            <p>
-              <span class="label">Ano de conclusão:</span>
-              <span class="value">2024</span>
-            </p>
-            <p>
-              <span class="label">Certificado:</span>
-              <span class="value">Concluído</span>
-              <a href="imagens/Curso-JavaScript-40horas.pdf" target="_blank" class="value">Certificado 🎓</a>
-
-            </p>
+            <p><span class="label">Instituição:</span> <span class="value">Udemy</span></p>
+            <p><span class="label">Duração:</span> <span class="value">20 horas</span></p>
+            <p><span class="label">Professor:</span> <span class="value">Gustavo Guanabara Battisti</span></p>
+            <p><span class="label">Ano de conclusão:</span> <span class="value">2024</span></p>
+            <p><span class="label">Certificado:</span> <span class="value">Concluído</span> <a class="value">Certificado 🎓</a></p>
           </div>
         </div>
-
-        <!-- item 3 -->
-        <div class="course-item">
-          <h3>Git e Github</h3>
+  
+        <div class="carousel-item">
+          <h3>React js e React Redux</h3>
           <div class="details">
-            <p>
-              <span class="label">Instituição:</span>
-              <span class="value">Curso em Vídeo</span>
-            </p>
-            <p>
-              <span class="label">Duração:</span>
-              <span class="value">20 horas</span>
-            </p>
-            <p>
-              <span class="label">Professor:</span>
-              <span class="value">Gustavo Guanabara</span>
-            </p>
-            <p>
-              <span class="label">Ano de conclusão:</span>
-              <span class="value">2024</span>
-            </p>
-            <p>
-              <span class="label">Certificado:</span>
-              <span class="value">Concluído</span>
-              <a href="imagens/Curso-git-github.pdf" target="_blank" class="value">Certificado 🎓</a>
-            </p>
+            <p><span class="label">Instituição:</span> <span class="value">Udemy</span></p>
+            <p><span class="label">Duração:</span> <span class="value">30 horas</span></p>
+            <p><span class="label">Professor:</span> <span class="value">Leonardo Moura</span></p>
+            <p><span class="label">Ano de conclusão:</span> <span class="value">-</span></p>
+            <p><span class="label">Certificado:</span> <span class="value">Em andamento</span> <a class="value">Certificado 🎓</a></p>
           </div>
         </div>
-        <div class="course-item">
-          <h3>HTML5</h3>
+  
+        <div class="carousel-item">
+          <h3>NodeJS Avançado</h3>
           <div class="details">
-            <p>
-              <span class="label">Instituição:</span>
-              <span class="value">Curso em Vídeo</span>
-            </p>
-            <p>
-              <span class="label">Duração:</span>
-              <span class="value">40 horas</span>
-            </p>
-            <p>
-              <span class="label">Professor:</span>
-              <span class="value">Gustavo Guanabara</span>
-            </p>
-            <p>
-              <span class="label">Ano de conclusão:</span>
-              <span class="value">2024</span>
-            </p>
-            <p>
-              <span class="label">Certificado:</span>
-              <span class="value">Concluído</span>
-              <a href="imagens/HTML-40HORAS-CURSOEMVIDEO.pdf" target="_blank" class="value">Certificado 🎓</a>
-            </p>
+            <p><span class="label">Instituição:</span> <span class="value">Udemy</span></p>
+            <p><span class="label">Duração:</span> <span class="value">15 horas</span></p>
+            <p><span class="label">Professor:</span> <span class="value">Jorge SantAna </span></p>
+            <p><span class="label">Ano de conclusão:</span> <span class="value">2024</span></p>
+            <p><span class="label">Certificado:</span> <span class="value">Concluído</span> <a class="value">Certificado 🎓</a></p>
           </div>
         </div>
-        <div class="course-item">
-          <h3>HTML E CSS3</h3>
-          <div class="details">
-            <p>
-              <span class="label">Instituição:</span>
-              <span class="value">Curso em Vídeo</span>
-            </p>
-            <p>
-              <span class="label">Duração:</span>
-              <span class="value">40 horas</span>
-            </p>
-            <p>
-              <span class="label">Professor:</span>
-              <span class="value">Gustavo Guanabara</span>
-            </p>
-            <p>
-              <span class="label">Ano de conclusão:</span>
-              <span class="value">2024</span>
-            </p>
-            <p>
-              <span class="label">Certificado:</span>
-              <span class="value">Concluído</span>
-              <a href="imagens/Gabriel-Land-Vieira-Curso-HTML5-e-CSS3.pdf" target="_blank" class="value">Certificado 🎓</a>
-            </p>
-          </div>
-        </div>
+  
       </div>
-      <div class="button-container">
-        <button id="prevButton">Prev</button>
-        <button id="nextButton">Next</button>
-      </div>
-  </div>
+    </div>
+    <div class="carousel-indicators">
+      <span class="indicator active" data-index="0"></span>
+      <span class="indicator" data-index="1"></span>
+      <span class="indicator" data-index="2"></span>
+      <span class="indicator" data-index="3"></span>
+      <span class="indicator" data-index="4"></span>
+    </div>
+  
+    <div class="button-container">
+      <button id="prevButton">Anterior</button>
+      <button id="nextButton">Próximo</button>
+    </div>
   </section>
+  
+    
+  </section>
+  
   <!-- Footer -->
   <footer id="footer">
     <div class="footer__content max-width mb-0">
